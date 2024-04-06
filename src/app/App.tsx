@@ -11,9 +11,9 @@ export function App() {
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
-        <Route index element={<Dashboard />} />
-        <Route index element={<Reports />} />
-        <Route index element={<SettingsGeneral />} />
+        <Route  path='/dashboard' element={<Dashboard />} />
+        <Route  path='/reports'element={<Reports />} />
+        <Route  path='/settings' element={<SettingsGeneral />} />
       </Routes>
     </BrowserRouter>
   );
