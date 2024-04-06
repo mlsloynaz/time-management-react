@@ -1,6 +1,6 @@
 
 export function SettingsGeneral(){
     return (
-        <div>Settings Page</div>
+        <div>Settings General Page</div>
     )
 }
