@@ -2,8 +2,10 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+jest.mock('./modules/Home', () => () => <div data-testid="home-page" />);
+
+test('renders home page', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const homePage = screen.getByTestId("home-page");
+  expect(homePage).toBeInTheDocument();
 });
